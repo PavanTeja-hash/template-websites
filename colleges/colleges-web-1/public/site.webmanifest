@@ -1,0 +1,20 @@
+{
+  "name": "Vidyasagar College of Arts and Science",
+  "short_name": "Vidyasagar",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F7F8FA",
+  "theme_color": "#1B3A5C",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
