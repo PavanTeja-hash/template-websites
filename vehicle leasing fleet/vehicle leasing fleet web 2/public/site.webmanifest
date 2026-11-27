@@ -1,0 +1,12 @@
+{
+  "name": "DRIVELINK",
+  "short_name": "DRIVELINK",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#FBF9F6",
+  "theme_color": "#1B2D45",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
