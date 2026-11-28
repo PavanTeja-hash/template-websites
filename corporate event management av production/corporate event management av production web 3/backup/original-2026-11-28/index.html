@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NEXEVENT | Corporate Event Management & Brand Activations, Mumbai</title>
+<meta name="description" content="NEXEVENT Mumbai. End-to-end corporate event management for conferences, summits, product launches, brand activations and award ceremonies. Strategy to stage, one team.">
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');window._fb=setTimeout(function(){document.documentElement.classList.remove('js')},4000);</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--c60:#0D0D0D;--c30:#F5F0EB;--c10:#FF5C35;
+--c10h:#E84E2B;--c10g:rgba(255,92,53,.1);
+--white:#FFFFFF;--dark2:#161616;--dark3:#1E1E1E;--dark4:#282828;
+--gray300:#A3A3A3;--gray400:#737373;--gray500:#525252;
+--ff-display:'Space Grotesk',system-ui,sans-serif;--ff-body:'Outfit',system-ui,sans-serif;
+--fs-hero:clamp(2.6rem,6vw,5rem);--fs-h2:clamp(1.8rem,4vw,3rem);--fs-h3:1.2rem;--fs-body:.95rem;--fs-sm:.85rem;--fs-xs:.75rem;
+--radius:10px;--radius-lg:14px;--radius-xl:24px;
+--maxw:1200px;--nav-h:72px;
+--ease:cubic-bezier(.25,.46,.45,.94)
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--ff-body);font-size:var(--fs-body);line-height:1.7;color:var(--c30);background:var(--c60);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button,input,select,textarea{font:inherit;border:none;outline:none;background:none}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.section{padding:100px 0}
+h1,h2,h3,h4{font-family:var(--ff-display);font-weight:700;line-height:1.15}
+
+.js .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal.visible{opacity:1;transform:none}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:100;transition:background .35s,box-shadow .35s}
+.nav.scrolled{background:rgba(13,13,13,.92);backdrop-filter:blur(16px);box-shadow:0 1px 20px rgba(0,0,0,.3)}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:0 24px;height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--ff-display);font-size:1.3rem;font-weight:700;color:var(--white);display:flex;align-items:center;gap:10px;letter-spacing:-.5px}
+.logo-dot{width:10px;height:10px;border-radius:50%;background:var(--c10);display:inline-block}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{color:var(--gray300);font-size:var(--fs-sm);font-weight:500;transition:color .3s}
+.nav-links a:hover{color:var(--white)}
+.nav-cta{background:var(--c10);color:var(--white);padding:10px 24px;border-radius:50px;font-weight:600;font-size:var(--fs-sm);transition:background .3s}
+.nav-cta:hover{background:var(--c10h)}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px}
+.hamburger span{width:24px;height:2px;background:var(--white);border-radius:2px;transition:transform .3s,opacity .3s}
+.hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;background:var(--c60);position:relative;overflow:hidden;padding:var(--nav-h) 0 60px}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.18}
+.hero-content{position:relative;z-index:2;max-width:750px}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,92,53,.3);border-radius:50px;padding:6px 18px;font-size:var(--fs-xs);font-weight:600;color:var(--c10);margin-bottom:28px;text-transform:uppercase;letter-spacing:1.5px}
+.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--c10);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:var(--fs-hero);color:var(--white);margin-bottom:20px;letter-spacing:-1px}
+.hero h1 span{color:var(--c10)}
+.hero-sub{font-size:1.05rem;color:var(--gray300);line-height:1.8;margin-bottom:36px;max-width:580px}
+.hero-btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:var(--c10);color:var(--white);padding:15px 32px;border-radius:50px;font-weight:600;font-size:var(--fs-body);transition:background .3s,transform .3s;cursor:pointer}
+.btn-primary:hover{background:var(--c10h);transform:translateY(-2px)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--dark4);color:var(--gray300);padding:15px 32px;border-radius:50px;font-weight:500;font-size:var(--fs-body);transition:border-color .3s,color .3s;cursor:pointer}
+.btn-ghost:hover{border-color:var(--c10);color:var(--white)}
+.hero-stats{display:flex;gap:48px;margin-top:52px;padding-top:28px;border-top:1px solid var(--dark4)}
+.hero-stat-num{font-family:var(--ff-display);font-size:2.2rem;font-weight:700;color:var(--white)}
+.hero-stat-label{font-size:var(--fs-xs);color:var(--gray400);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+
+/* TICKER */
+.ticker{background:var(--dark2);border-top:1px solid var(--dark4);border-bottom:1px solid var(--dark4);padding:18px 0;overflow:hidden;white-space:nowrap}
+.ticker-track{display:inline-flex;gap:48px;animation:scroll 30s linear infinite}
+.ticker-track span{font-family:var(--ff-display);font-size:var(--fs-sm);font-weight:600;color:var(--gray400);text-transform:uppercase;letter-spacing:2px;display:inline-flex;align-items:center;gap:12px}
+.ticker-track span::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--c10)}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* IMAGE STRIP */
+.img-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+.img-strip img{width:100%;height:280px;object-fit:cover}
+
+/* SECTION HELPERS */
+.section-eyebrow{font-family:var(--ff-display);font-size:var(--fs-xs);font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:var(--c10);margin-bottom:12px}
+.section-title{font-size:var(--fs-h2);margin-bottom:16px;letter-spacing:-1px}
+.section-desc{font-size:1rem;color:var(--gray400);max-width:560px;margin-bottom:48px}
+.light{background:var(--c30);color:var(--c60)}
+.light .section-desc{color:var(--gray500)}
+
+/* SERVICES */
+.services{background:var(--dark2)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc-card{background:var(--dark3);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--dark4);transition:border-color .3s,transform .3s}
+.svc-card:hover{border-color:var(--c10);transform:translateY(-4px)}
+.svc-img{height:200px;overflow:hidden}
+.svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.svc-card:hover .svc-img img{transform:scale(1.04)}
+.svc-body{padding:24px}
+.svc-body h3{font-size:var(--fs-h3);color:var(--white);margin-bottom:8px}
+.svc-body p{font-size:var(--fs-sm);color:var(--gray400)}
+
+/* PROCESS */
+.process{background:var(--c60)}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
+.step-card{position:relative;padding:32px 24px;border-radius:var(--radius-lg);border:1px solid var(--dark4);background:var(--dark2);counter-increment:step;transition:border-color .3s}
+.step-card:hover{border-color:var(--c10)}
+.step-card::before{content:counter(step,decimal-leading-zero);font-family:var(--ff-display);font-size:3rem;font-weight:700;color:var(--c10);opacity:.2;line-height:1}
+.step-card h3{font-size:var(--fs-h3);color:var(--white);margin:12px 0 8px}
+.step-card p{font-size:var(--fs-sm);color:var(--gray400)}
+
+/* WORK */
+.work{background:var(--dark2)}
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.work-card{position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:16/10}
+.work-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.work-card:hover img{transform:scale(1.04)}
+.work-overlay{position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.work-overlay h3{font-size:1.1rem;color:var(--white);margin-bottom:4px}
+.work-overlay p{font-size:var(--fs-xs);color:var(--gray300)}
+.work-tag{display:inline-block;font-size:var(--fs-xs);font-weight:600;padding:3px 10px;border-radius:50px;background:var(--c10g);color:var(--c10);margin-top:8px}
+
+/* WHY US */
+.why{background:var(--c60)}
+.why-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.why-img{border-radius:var(--radius-xl);overflow:hidden}
+.why-img img{width:100%;height:100%;object-fit:cover}
+.why-list{display:flex;flex-direction:column;gap:24px}
+.why-item{display:flex;gap:16px;align-items:flex-start}
+.why-icon{width:44px;height:44px;border-radius:12px;background:var(--dark3);border:1px solid var(--dark4);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.why-icon svg{width:22px;height:22px;color:var(--c10)}
+.why-item h3{font-size:var(--fs-h3);color:var(--white);margin-bottom:4px}
+.why-item p{font-size:var(--fs-sm);color:var(--gray400)}
+
+/* TESTIMONIALS */
+.testimonials{background:var(--dark2)}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.test-card{background:var(--dark3);border-radius:var(--radius-lg);padding:32px;border:1px solid var(--dark4)}
+.test-stars{display:flex;gap:2px;margin-bottom:14px}
+.test-stars svg{width:16px;height:16px;fill:var(--c10);stroke:none}
+.test-card blockquote{font-size:var(--fs-body);color:var(--gray300);line-height:1.7;margin-bottom:20px;font-style:italic}
+.test-author{display:flex;align-items:center;gap:12px}
+.test-avatar{width:44px;height:44px;border-radius:50%;background:var(--c10g);display:flex;align-items:center;justify-content:center;font-family:var(--ff-display);font-weight:700;font-size:var(--fs-sm);color:var(--c10)}
+.test-name{font-weight:600;font-size:var(--fs-sm);color:var(--white)}
+.test-role{font-size:var(--fs-xs);color:var(--gray400)}
+
+/* FAQ */
+.faq{background:var(--c60)}
+.faq-grid{max-width:760px;margin:0 auto}
+.faq-item{margin-bottom:12px}
+.faq-item details{background:var(--dark2);border-radius:var(--radius);border:1px solid var(--dark4);transition:border-color .3s}
+.faq-item details[open]{border-color:var(--c10)}
+.faq-item summary{padding:20px 24px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:var(--fs-body);color:var(--white)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.3rem;color:var(--c10);font-weight:400;transition:transform .3s}
+.faq-item details[open] summary::after{content:'\2212'}
+.faq-answer{padding:0 24px 20px;font-size:var(--fs-sm);color:var(--gray400);line-height:1.8}
+
+/* CTA */
+.cta-band{background:var(--c10);padding:80px 0;text-align:center}
+.cta-band h2{font-size:var(--fs-h2);color:var(--white);margin-bottom:12px;letter-spacing:-1px}
+.cta-band p{color:rgba(255,255,255,.75);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto}
+.btn-dark{display:inline-flex;align-items:center;gap:8px;background:var(--c60);color:var(--white);padding:16px 36px;border-radius:50px;font-weight:700;font-size:var(--fs-body);transition:background .3s,transform .3s;cursor:pointer}
+.btn-dark:hover{background:var(--dark2);transform:translateY(-2px)}
+
+/* FOOTER */
+.footer{background:#080808;padding:60px 0 30px;color:var(--gray400)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-brand .logo{margin-bottom:14px}
+.footer-brand p{font-size:var(--fs-sm);line-height:1.7}
+.footer h4{color:var(--white);font-family:var(--ff-display);font-size:var(--fs-sm);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px}
+.footer a{font-size:var(--fs-sm);display:block;padding:4px 0;transition:color .3s}
+.footer a:hover{color:var(--c10)}
+.footer-bottom{border-top:1px solid var(--dark4);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:var(--fs-xs)}
+.footer-socials{display:flex;gap:16px}
+.footer-socials a{color:var(--gray400);transition:color .3s}
+.footer-socials a:hover{color:var(--c10)}
+.footer-socials svg{width:20px;height:20px}
+
+/* DRAWER */
+.drawer-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:200;opacity:0;pointer-events:none;transition:opacity .35s}
+.drawer-overlay.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;width:420px;max-width:100%;height:100%;background:var(--dark2);z-index:201;transform:translateX(100%);transition:transform .4s var(--ease);overflow-y:auto;padding:32px 28px}
+.drawer.open{transform:none}
+.drawer-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.drawer-head h2{font-size:1.3rem;color:var(--white)}
+.drawer-close{width:36px;height:36px;border-radius:50%;background:var(--dark4);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .3s}
+.drawer-close:hover{background:var(--c10g)}
+.drawer-close svg{width:18px;height:18px;color:var(--gray300)}
+.drawer label{display:block;font-size:var(--fs-sm);font-weight:600;color:var(--gray300);margin-bottom:6px;margin-top:18px}
+.drawer input,.drawer select,.drawer textarea{width:100%;padding:12px 16px;border-radius:var(--radius);border:1px solid var(--dark4);background:var(--dark3);color:var(--white);font-size:var(--fs-sm);transition:border-color .3s}
+.drawer input:focus,.drawer select:focus,.drawer textarea:focus{border-color:var(--c10)}
+.drawer textarea{resize:vertical;min-height:80px}
+.drawer select option{background:var(--dark3);color:var(--white)}
+.drawer .btn-primary{width:100%;justify-content:center;margin-top:24px}
+
+/* WA */
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:90;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.4);transition:transform .3s;cursor:pointer}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+
+/* MOBILE */
+.mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:rgba(13,13,13,.97);backdrop-filter:blur(16px);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mobile-menu.open{display:flex}
+.mobile-menu a{color:var(--white);font-size:1.2rem;font-weight:600}
+
+@media(max-width:1024px){
+.services-grid{grid-template-columns:repeat(2,1fr)}
+.process-grid{grid-template-columns:repeat(2,1fr)}
+.work-grid,.test-grid{grid-template-columns:repeat(2,1fr)}
+.why-layout{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+.nav-links{display:none}
+.hamburger{display:flex}
+.hero h1{font-size:2.2rem}
+.hero-stats{flex-direction:column;gap:20px}
+.services-grid,.process-grid,.work-grid,.test-grid{grid-template-columns:1fr}
+.img-strip{grid-template-columns:repeat(2,1fr)}
+.img-strip img{height:200px}
+.footer-grid{grid-template-columns:1fr}
+.drawer{width:100%}
+}
+@media(max-width:480px){
+.img-strip{grid-template-columns:1fr}
+.hero-btns{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+.reveal,.ticker-track{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+<div class="nav-inner">
+<a href="#" class="logo"><span class="logo-dot"></span>NEXEVENT</a>
+<div class="nav-links">
+<a href="#services">Services</a>
+<a href="#work">Work</a>
+<a href="#process">Process</a>
+<a href="#why">Why Us</a>
+<a href="#faq">FAQ</a>
+<a href="#" class="nav-cta book-trigger">Get a Brief Call</a>
+</div>
+<div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Menu">
+<span></span><span></span><span></span>
+</div>
+</div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+<a href="#services">Services</a>
+<a href="#work">Work</a>
+<a href="#process">Process</a>
+<a href="#why">Why Us</a>
+<a href="#faq">FAQ</a>
+<a href="#" class="nav-cta book-trigger">Get a Brief Call</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-bg"><img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=1800" width="1800" height="1000" alt="Large corporate event hall with stage lighting and audience" fetchpriority="high"></div>
+<div class="container">
+<div class="hero-content">
+<div class="hero-tag"><span class="hero-tag-dot"></span> Now booking Q1 2027</div>
+<h1>Events that move <span>businesses</span> forward.</h1>
+<p class="hero-sub">Strategy-led corporate event management for companies that treat every gathering as a brand moment. Conferences, product launches, award nights and brand activations across India.</p>
+<div class="hero-btns">
+<button type="button" class="btn-primary book-trigger">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+Get a Brief Call
+</button>
+<a href="#work" class="btn-ghost">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+See Our Work
+</a>
+</div>
+<div class="hero-stats">
+<div><div class="hero-stat-num">400+</div><div class="hero-stat-label">Events Delivered</div></div>
+<div><div class="hero-stat-num">12</div><div class="hero-stat-label">Years in Business</div></div>
+<div><div class="hero-stat-num">60+</div><div class="hero-stat-label">Corporate Clients</div></div>
+<div><div class="hero-stat-num">18</div><div class="hero-stat-label">Cities Covered</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+<div class="ticker-track" aria-hidden="true">
+<span>Conferences</span><span>Product Launches</span><span>Award Nights</span><span>Brand Activations</span><span>Dealer Meets</span><span>Town Halls</span><span>Summits</span><span>Exhibitions</span><span>Galas</span><span>Investor Days</span>
+<span>Conferences</span><span>Product Launches</span><span>Award Nights</span><span>Brand Activations</span><span>Dealer Meets</span><span>Town Halls</span><span>Summits</span><span>Exhibitions</span><span>Galas</span><span>Investor Days</span>
+</div>
+</div>
+
+<!-- IMAGE STRIP -->
+<div class="img-strip">
+<img src="https://images.pexels.com/photos/3810792/pexels-photo-3810792.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Decorated event hall with stage and floral setup" loading="lazy">
+<img src="https://images.pexels.com/photos/301987/pexels-photo-301987.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Conference audience engaged in corporate event" loading="lazy">
+<img src="https://images.pexels.com/photos/1709003/pexels-photo-1709003.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Speaker presenting at corporate conference stage" loading="lazy">
+<img src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Formal dinner event with round tables and candles" loading="lazy">
+</div>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+<div class="container">
+<p class="section-eyebrow reveal">What We Do</p>
+<h2 class="section-title reveal">End-to-End Event <span style="color:var(--c10)">Management</span></h2>
+<p class="section-desc reveal">From the first strategy call to the last guest walking out. We handle concept, logistics, production, content and on-ground execution so your internal team stays focused on the business.</p>
+<div class="services-grid">
+
+<div class="svc-card reveal">
+<div class="svc-img"><img src="https://images.pexels.com/photos/301987/pexels-photo-301987.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Conference with audience and presentation" loading="lazy"></div>
+<div class="svc-body">
+<h3>Conferences & Summits</h3>
+<p>Multi-day programs with keynote stages, breakout tracks, speaker management, registration tech, and live streaming. 50 to 5,000 delegates.</p>
+</div>
+</div>
+
+<div class="svc-card reveal">
+<div class="svc-img"><img src="https://images.pexels.com/photos/3810792/pexels-photo-3810792.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Stage with dramatic lighting for product launch" loading="lazy"></div>
+<div class="svc-body">
+<h3>Product Launches</h3>
+<p>Reveal moments that make the audience lean in. Stage design, AV scripting, media management, influencer seating and post-event buzz kits.</p>
+</div>
+</div>
+
+<div class="svc-card reveal">
+<div class="svc-img"><img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Award ceremony stage with decorative lighting" loading="lazy"></div>
+<div class="svc-body">
+<h3>Award Ceremonies & Galas</h3>
+<p>Black-tie production: red carpet, live band or DJ coordination, trophy logistics, teleprompter scripts, and VIP guest management.</p>
+</div>
+</div>
+
+<div class="svc-card reveal">
+<div class="svc-img"><img src="https://images.pexels.com/photos/1709003/pexels-photo-1709003.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Large corporate town hall with presenter" loading="lazy"></div>
+<div class="svc-body">
+<h3>Town Halls & Offsites</h3>
+<p>Internal alignment events that feel as polished as external ones. Venue scouting, team-building modules, CEO fireside chats and wellness breaks.</p>
+</div>
+</div>
+
+<div class="svc-card reveal">
+<div class="svc-img"><img src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Brand activation booth with interactive setup" loading="lazy"></div>
+<div class="svc-body">
+<h3>Brand Activations</h3>
+<p>Pop-up experiences, mall activations, roadshows and immersive brand installations. Concept, fabrication, staffing and analytics.</p>
+</div>
+</div>
+
+<div class="svc-card reveal">
+<div class="svc-img"><img src="https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="400" alt="Dealer meet dinner with round tables" loading="lazy"></div>
+<div class="svc-body">
+<h3>Dealer Meets & Incentive Trips</h3>
+<p>Channel partner events that build loyalty. Venue booking, travel logistics, gifting, entertainment and ROI reporting.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process" id="process">
+<div class="container">
+<p class="section-eyebrow reveal">How We Work</p>
+<h2 class="section-title reveal">Four Phases, <span style="color:var(--c10)">One Team</span></h2>
+<p class="section-desc reveal">Every event follows the same disciplined framework. No handoffs between departments, no lost context. Your brief stays intact from strategy to stage.</p>
+<div class="process-grid">
+<div class="step-card reveal"><h3>Discover</h3><p>We learn your brand, audience, goals and constraints. A 60-minute brief call, followed by a written event strategy document within 72 hours.</p></div>
+<div class="step-card reveal"><h3>Design</h3><p>Concept decks, 3D stage renders, run-of-show documents, vendor shortlists and a detailed budget. You approve before a single rupee is spent.</p></div>
+<div class="step-card reveal"><h3>Deliver</h3><p>Vendor onboarding, venue setup, tech rehearsals, guest management and real-time coordination. Our on-ground team runs a 48-hour pre-event install.</p></div>
+<div class="step-card reveal"><h3>Debrief</h3><p>Post-event report with attendance data, feedback scores, media coverage and a lessons-learned document. Because the next event starts here.</p></div>
+</div>
+</div>
+</section>
+
+<!-- WORK -->
+<section class="section work" id="work">
+<div class="container">
+<p class="section-eyebrow reveal">Selected Work</p>
+<h2 class="section-title reveal">Events We've <span style="color:var(--c10)">Delivered</span></h2>
+<p class="section-desc reveal">A sample of recent projects across industries and formats.</p>
+<div class="work-grid">
+
+<div class="work-card reveal">
+<img src="https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg?auto=compress&cs=tinysrgb&w=800" width="800" height="500" alt="Large corporate annual conference" loading="lazy">
+<div class="work-overlay"><h3>TechNova Annual Summit 2026</h3><p>2-day conference, 1,800 delegates, Jio World Centre Mumbai</p><span class="work-tag">Conference</span></div>
+</div>
+
+<div class="work-card reveal">
+<img src="https://images.pexels.com/photos/3810792/pexels-photo-3810792.jpeg?auto=compress&cs=tinysrgb&w=800" width="800" height="500" alt="Product launch event stage" loading="lazy">
+<div class="work-overlay"><h3>Luxara Fragrances India Launch</h3><p>Product reveal for 400 media + influencers, Four Seasons Mumbai</p><span class="work-tag">Product Launch</span></div>
+</div>
+
+<div class="work-card reveal">
+<img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800" width="800" height="500" alt="Award ceremony with decorated stage" loading="lazy">
+<div class="work-overlay"><h3>BFSI Excellence Awards 2025</h3><p>Black-tie gala for 600 guests, Grand Hyatt Mumbai</p><span class="work-tag">Award Night</span></div>
+</div>
+
+<div class="work-card reveal">
+<img src="https://images.pexels.com/photos/1709003/pexels-photo-1709003.jpeg?auto=compress&cs=tinysrgb&w=800" width="800" height="500" alt="Large town hall with CEO speaking" loading="lazy">
+<div class="work-overlay"><h3>FinServe National Dealer Meet</h3><p>3-day offsite for 1,200 channel partners, Goa</p><span class="work-tag">Dealer Meet</span></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- WHY US -->
+<section class="section why" id="why">
+<div class="container">
+<p class="section-eyebrow reveal">Why NEXEVENT</p>
+<h2 class="section-title reveal">What Makes Us <span style="color:var(--c10)">Different</span></h2>
+<div class="why-layout">
+<div class="why-img reveal"><img src="https://images.pexels.com/photos/301987/pexels-photo-301987.jpeg?auto=compress&cs=tinysrgb&w=800" width="800" height="600" alt="Event team coordinating a large conference" loading="lazy"></div>
+<div class="why-list">
+
+<div class="why-item reveal">
+<div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+<div><h3>One Team, Start to Finish</h3><p>No agency layers. The strategist who writes your brief is on the ground the day of. Your context never gets lost in handoffs.</p></div>
+</div>
+
+<div class="why-item reveal">
+<div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+<div><h3>In-House AV & Production</h3><p>Sound, LED, lighting, cameras and streaming. We own the gear and the crew, so your budget doesn't leak through sub-rentals.</p></div>
+</div>
+
+<div class="why-item reveal">
+<div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20V10M6 20V4M18 20v-6"/></svg></div>
+<div><h3>Data-Driven Debriefs</h3><p>Every event ends with a post-event report: attendance numbers, NPS scores, social reach and a lessons-learned doc for next time.</p></div>
+</div>
+
+<div class="why-item reveal">
+<div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+<div><h3>Pan-India Reach</h3><p>HQ in Mumbai, with on-ground teams and vendor networks across 18 cities. Same quality whether the event is in Delhi, Bangalore or Jaipur.</p></div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section testimonials">
+<div class="container">
+<p class="section-eyebrow reveal">Client Stories</p>
+<h2 class="section-title reveal">What <span style="color:var(--c10)">They</span> Say</h2>
+<div class="test-grid">
+
+<div class="test-card reveal">
+<div class="test-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+<blockquote>"NEXEVENT managed our annual conference for 1,800 people. The AV worked flawlessly, the stage design was on-brand, and they handled every vendor so we could focus on content. Best decision we made."</blockquote>
+<div class="test-author"><div class="test-avatar">RK</div><div><div class="test-name">Rohit K.</div><div class="test-role">VP Marketing, TechNova</div></div></div>
+</div>
+
+<div class="test-card reveal">
+<div class="test-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+<blockquote>"We launched our India line with NEXEVENT. From the concept deck to the last guest leaving, they owned every detail. The reveal moment gave us goosebumps. 400 media people and not a single hiccup."</blockquote>
+<div class="test-author"><div class="test-avatar">AM</div><div><div class="test-name">Ananya M.</div><div class="test-role">Brand Director, Luxara</div></div></div>
+</div>
+
+<div class="test-card reveal">
+<div class="test-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+<blockquote>"Three-day dealer meet in Goa for 1,200 partners. Travel, hotels, activities, dinners, awards night. NEXEVENT ran the entire show. Our channel team just showed up and hosted. That's the dream."</blockquote>
+<div class="test-author"><div class="test-avatar">SP</div><div><div class="test-name">Siddharth P.</div><div class="test-role">Head of Channels, FinServe</div></div></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+<div class="container">
+<p class="section-eyebrow reveal" style="text-align:center">FAQ</p>
+<h2 class="section-title reveal" style="text-align:center;margin-bottom:40px">Common <span style="color:var(--c10)">Questions</span></h2>
+<div class="faq-grid">
+<div class="faq-item reveal"><details><summary>How far in advance should we book?</summary><div class="faq-answer">For large conferences and multi-day events, 3-6 months is ideal. Product launches and award nights need 6-8 weeks minimum. Town halls and smaller activations can be turned around in 3-4 weeks if venue availability permits.</div></details></div>
+<div class="faq-item reveal"><details><summary>Do you work outside Mumbai?</summary><div class="faq-answer">Yes. We have on-ground teams and vendor networks in 18 cities including Delhi, Bangalore, Hyderabad, Chennai, Pune, Goa, Jaipur and Kolkata. For international events, we partner with vetted local production houses.</div></details></div>
+<div class="faq-item reveal"><details><summary>Can we hire you for AV and production only?</summary><div class="faq-answer">Absolutely. Many clients bring us in specifically for stage design, sound, LED, lighting and live streaming while managing the rest in-house. We're flexible on scope.</div></details></div>
+<div class="faq-item reveal"><details><summary>What does a typical event cost?</summary><div class="faq-answer">It depends on format, scale and production complexity. A 200-person town hall starts around Rs 4-6 lakh. A 1,000+ delegate conference with full production is typically Rs 25-50 lakh. We share an itemized budget after the discovery call so you see exactly where every rupee goes.</div></details></div>
+<div class="faq-item reveal"><details><summary>Do you handle travel and hotel bookings?</summary><div class="faq-answer">Yes. For dealer meets, offsites and multi-city events, we manage flights, hotel blocks, airport transfers and on-ground logistics. Our travel desk handles groups of 50 to 2,000.</div></details></div>
+<div class="faq-item reveal"><details><summary>What industries do you work with?</summary><div class="faq-answer">IT, BFSI, pharma, automotive, FMCG, real estate and startups. We've worked with Series A companies doing their first offsite and with Fortune 500 firms running 5,000-person annual conferences.</div></details></div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+<div class="container">
+<h2>Your next event deserves a team that shows up.</h2>
+<p>Tell us the date, the city and the goal. We'll come back with a strategy, a budget and a plan.</p>
+<button type="button" class="btn-dark book-trigger">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+Get a Brief Call
+</button>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo"><span class="logo-dot"></span>NEXEVENT</div>
+<p>Strategy-led corporate event management. Conferences, launches, activations and everything in between. HQ Mumbai, delivery across India.</p>
+</div>
+<div>
+<h4>Services</h4>
+<a href="#services">Conferences</a>
+<a href="#services">Product Launches</a>
+<a href="#services">Award Nights</a>
+<a href="#services">Brand Activations</a>
+<a href="#services">Town Halls</a>
+<a href="#services">Dealer Meets</a>
+</div>
+<div>
+<h4>Company</h4>
+<a href="#work">Our Work</a>
+<a href="#process">Process</a>
+<a href="#why">Why Us</a>
+<a href="#faq">FAQ</a>
+</div>
+<div>
+<h4>Contact</h4>
+<a href="tel:+912248901234">+91 22 4890 1234</a>
+<a href="mailto:brief@nexevent.in">brief@nexevent.in</a>
+<a>WeWork BKC, Bandra Kurla Complex, Mumbai 400051</a>
+<a>Mon-Sat: 10 AM - 7 PM</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>2026 NEXEVENT. All rights reserved.</p>
+<div class="footer-socials">
+<a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+<a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+<a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- DRAWER -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="drawer" role="dialog" aria-label="Get a brief call">
+<div class="drawer-head">
+<h2>Get a Brief Call</h2>
+<button type="button" class="drawer-close" id="drawerClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+</div>
+<form id="bookingForm" novalidate>
+<label for="bk-name">Your Name</label>
+<input type="text" id="bk-name" required placeholder="Full name">
+<label for="bk-company">Company</label>
+<input type="text" id="bk-company" placeholder="Organisation name">
+<label for="bk-phone">Phone</label>
+<input type="tel" id="bk-phone" required placeholder="+91 98765 43210">
+<label for="bk-event">Event Type</label>
+<select id="bk-event" required>
+<option value="">Select event type</option>
+<option>Conference / Summit</option>
+<option>Product Launch</option>
+<option>Award Night / Gala</option>
+<option>Brand Activation</option>
+<option>Town Hall / Offsite</option>
+<option>Dealer Meet / Incentive Trip</option>
+<option>Exhibition / Trade Show</option>
+<option>Other</option>
+</select>
+<label for="bk-guests">Expected Guests</label>
+<select id="bk-guests" required>
+<option value="">Select range</option>
+<option>50 - 200</option>
+<option>200 - 500</option>
+<option>500 - 1,000</option>
+<option>1,000 - 2,000</option>
+<option>2,000+</option>
+</select>
+<label for="bk-city">Event City</label>
+<input type="text" id="bk-city" placeholder="Mumbai, Delhi, Bangalore...">
+<label for="bk-date">Tentative Date</label>
+<input type="date" id="bk-date">
+<label for="bk-notes">Brief / Additional Details</label>
+<textarea id="bk-notes" placeholder="Goals, theme, special requirements..."></textarea>
+<button type="submit" class="btn-primary">Send Brief</button>
+</form>
+</div>
+
+<!-- WA -->
+<a href="https://wa.me/912248901234?text=Hi%20NEXEVENT%2C%20I%27d%20like%20to%20discuss%20an%20upcoming%20corporate%20event." class="wa-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+(function(){
+var nav=document.getElementById('nav');
+window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>60)},{passive:true});
+var ham=document.getElementById('hamburger'),mob=document.getElementById('mobileMenu');
+ham.addEventListener('click',function(){ham.classList.toggle('active');mob.classList.toggle('open');document.body.style.overflow=mob.classList.contains('open')?'hidden':'';});
+mob.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){ham.classList.remove('active');mob.classList.remove('open');document.body.style.overflow='';});});
+
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}});},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('visible');});}
+clearTimeout(window._fb);
+
+var overlay=document.getElementById('drawerOverlay'),drawer=document.getElementById('drawer'),closeBtn=document.getElementById('drawerClose');
+function openD(){overlay.classList.add('open');drawer.classList.add('open');document.body.style.overflow='hidden';}
+function closeD(){overlay.classList.remove('open');drawer.classList.remove('open');document.body.style.overflow='';}
+document.querySelectorAll('.book-trigger').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();openD();});});
+closeBtn.addEventListener('click',closeD);
+overlay.addEventListener('click',closeD);
+
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+e.preventDefault();
+var nm=document.getElementById('bk-name').value,ph=document.getElementById('bk-phone').value,ev=document.getElementById('bk-event').value,gs=document.getElementById('bk-guests').value;
+if(!nm||!ph||!ev||!gs){alert('Please fill all required fields.');return;}
+var msg='Hi NEXEVENT, I need help with an event:\n\nName: '+nm+'\nPhone: '+ph;
+var co=document.getElementById('bk-company').value;if(co)msg+='\nCompany: '+co;
+msg+='\nEvent: '+ev+'\nGuests: '+gs;
+var ci=document.getElementById('bk-city').value;if(ci)msg+='\nCity: '+ci;
+var dt=document.getElementById('bk-date').value;if(dt)msg+='\nDate: '+dt;
+var nt=document.getElementById('bk-notes').value;if(nt)msg+='\nBrief: '+nt;
+window.open('https://wa.me/912248901234?text='+encodeURIComponent(msg),'_blank');
+closeD();
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(function(a){
+a.addEventListener('click',function(e){
+var t=document.querySelector(this.getAttribute('href'));
+if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+});
+});
+})();
+</script>
+</body>
+</html>
