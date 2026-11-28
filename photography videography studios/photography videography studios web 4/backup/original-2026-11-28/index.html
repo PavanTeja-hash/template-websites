@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LENSCAPE | Wedding & Commercial Photography Studio, Chandigarh</title>
+<meta name="description" content="LENSCAPE Chandigarh. Cinematic wedding films, commercial photography, brand shoots and product photography. Stories told through light.">
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');window._fb=setTimeout(function(){document.documentElement.classList.remove('js')},4000);</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--c60:#F4F0EB;--c30:#1A1A1A;--c10:#B8860B;
+--c10h:#9A7209;--c10g:rgba(184,134,11,.1);
+--white:#FDFAF5;--cream2:#EDE7DE;--cream3:#E0D8CC;
+--gray400:#6B6B6B;--gray500:#4A4A4A;
+--ff-d:'Cormorant Garamond',Georgia,serif;--ff-b:'Inter',system-ui,sans-serif;
+--fs-hero:clamp(2.8rem,7vw,5.5rem);--fs-h2:clamp(1.8rem,4vw,3rem);--fs-h3:1.15rem;--fs-body:.92rem;--fs-sm:.82rem;--fs-xs:.72rem;
+--r:8px;--rl:16px;--maxw:1140px;--nav-h:68px;
+--ease:cubic-bezier(.22,.61,.36,1)
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--ff-b);font-size:var(--fs-body);line-height:1.7;color:var(--c30);background:var(--c60);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+button,input,select,textarea{font:inherit;border:none;outline:none;background:none}
+.ctn{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.sec{padding:90px 0}
+h1,h2,h3,h4{font-family:var(--ff-d);font-weight:600;line-height:1.15}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
+.js .rv.v{opacity:1;transform:none}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;height:var(--nav-h);z-index:100;transition:background .3s,box-shadow .3s}
+.nav.scrolled{background:rgba(244,240,235,.95);backdrop-filter:blur(14px);box-shadow:0 1px 12px rgba(0,0,0,.06)}
+.nav-in{max-width:var(--maxw);margin:0 auto;padding:0 20px;height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:var(--ff-d);font-size:1.5rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--c30)}
+.logo em{font-style:normal;color:var(--c10)}
+.nav-lk{display:flex;gap:24px;align-items:center}
+.nav-lk a{font-size:var(--fs-sm);font-weight:500;color:var(--gray500);transition:color .3s}
+.nav-lk a:hover{color:var(--c10)}
+.nav-cta{background:var(--c10);color:var(--white);padding:10px 22px;border-radius:50px;font-weight:600;font-size:var(--fs-sm);transition:background .3s,transform .3s}
+.nav-cta:hover{background:var(--c10h);transform:translateY(-2px)}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px}
+.ham span{width:22px;height:2px;background:var(--c30);border-radius:2px;transition:transform .3s,opacity .3s}
+.ham.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.ham.active span:nth-child(2){opacity:0}
+.ham.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mob-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:rgba(244,240,235,.98);backdrop-filter:blur(14px);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:28px}
+.mob-menu.open{display:flex}
+.mob-menu a{font-family:var(--ff-d);font-size:1.4rem;font-weight:600}
+
+/* HERO */
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:var(--nav-h) 0 0}
+.hero-txt{padding:60px 0 60px 20px}
+.hero-tag{display:inline-block;font-size:var(--fs-xs);font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:var(--c10);border:1px solid var(--c10);border-radius:50px;padding:5px 16px;margin-bottom:24px}
+.hero h1{font-size:var(--fs-hero);color:var(--c30);margin-bottom:18px;letter-spacing:-1px}
+.hero h1 span{color:var(--c10);font-style:italic}
+.hero-sub{font-size:1rem;color:var(--gray400);max-width:440px;margin-bottom:32px}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-p{display:inline-flex;align-items:center;gap:8px;background:var(--c10);color:var(--white);padding:14px 28px;border-radius:50px;font-weight:600;font-size:var(--fs-body);cursor:pointer;transition:background .3s,transform .3s}
+.btn-p:hover{background:var(--c10h);transform:translateY(-2px)}
+.btn-o{display:inline-flex;align-items:center;gap:8px;border:1.5px solid var(--cream3);color:var(--c30);padding:14px 28px;border-radius:50px;font-weight:500;font-size:var(--fs-body);cursor:pointer;transition:border-color .3s}
+.btn-o:hover{border-color:var(--c10)}
+.hero-img{height:100vh;position:relative;overflow:hidden}
+.hero-img img{width:100%;height:100%;object-fit:cover}
+.hero-badge{position:absolute;bottom:32px;left:32px;background:rgba(26,26,26,.85);backdrop-filter:blur(10px);border-radius:var(--rl);padding:18px 22px;display:flex;gap:28px}
+.hero-badge div{text-align:center}
+.hero-badge .num{font-family:var(--ff-d);font-size:1.6rem;font-weight:700;color:var(--white)}
+.hero-badge .lbl{font-size:var(--fs-xs);color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px}
+
+/* MARQUEE */
+.marq{background:var(--c30);padding:16px 0;overflow:hidden;white-space:nowrap}
+.marq-track{display:inline-flex;gap:40px;animation:mscroll 25s linear infinite}
+.marq-track span{font-family:var(--ff-d);font-size:1rem;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:1px;display:inline-flex;align-items:center;gap:12px}
+.marq-track span::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--c10)}
+@keyframes mscroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ABOUT */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.about-img{border-radius:var(--rl);overflow:hidden;aspect-ratio:4/5}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.ey{font-size:var(--fs-xs);font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:var(--c10);margin-bottom:10px}
+.stitle{font-size:var(--fs-h2);margin-bottom:14px;letter-spacing:-1px}
+.sdesc{font-size:var(--fs-body);color:var(--gray400);margin-bottom:32px}
+.about-stats{display:flex;gap:36px}
+.about-stat .num{font-family:var(--ff-d);font-size:2.2rem;font-weight:700;color:var(--c10)}
+.about-stat .lbl{font-size:var(--fs-xs);color:var(--gray400);text-transform:uppercase;letter-spacing:1px}
+
+/* SERVICES */
+.svc{background:var(--c60)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc-card{position:relative;border-radius:var(--rl);overflow:hidden;aspect-ratio:3/4;cursor:pointer}
+.svc-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.svc-card:hover img{transform:scale(1.05)}
+.svc-card::after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,.75))}
+.svc-info{position:absolute;bottom:0;left:0;right:0;padding:24px;z-index:2}
+.svc-info h3{font-family:var(--ff-d);font-size:1.3rem;color:#fff;margin-bottom:4px}
+.svc-info p{font-size:var(--fs-xs);color:rgba(255,255,255,.7)}
+
+/* GALLERY */
+.gallery{background:var(--c30);color:var(--white)}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:280px;gap:8px}
+.gal-grid .wide{grid-column:span 2}
+.gal-grid .tall{grid-row:span 2}
+.gal-item{border-radius:var(--r);overflow:hidden;position:relative;box-shadow:0 8px 30px rgba(0,0,0,.25);transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.gal-item:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 20px 50px rgba(0,0,0,.45);z-index:2}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.gal-item:hover img{transform:scale(1.08)}
+
+/* PACKAGES */
+.pkg{background:var(--white)}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pkg-card{border:1px solid var(--cream3);border-radius:var(--rl);padding:36px 28px;text-align:center;transition:border-color .3s,transform .3s}
+.pkg-card:hover{border-color:var(--c10);transform:translateY(-4px)}
+.pkg-card.feat{border-color:var(--c10);background:var(--c10g)}
+.pkg-label{font-size:var(--fs-xs);font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--c10);margin-bottom:8px}
+.pkg-card h3{font-family:var(--ff-d);font-size:1.6rem;margin-bottom:4px}
+.pkg-price{font-family:var(--ff-d);font-size:2.4rem;font-weight:700;color:var(--c10);margin:12px 0 20px}
+.pkg-price small{font-size:.9rem;font-weight:400;color:var(--gray400)}
+.pkg-list{text-align:left;margin-bottom:24px}
+.pkg-list li{font-size:var(--fs-sm);padding:6px 0;border-bottom:1px solid var(--cream2);display:flex;align-items:center;gap:8px}
+.pkg-list li::before{content:'';width:16px;height:16px;border-radius:50%;border:1.5px solid var(--c10);flex-shrink:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' stroke='%23B8860B' stroke-width='3' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center/10px no-repeat}
+
+/* TESTIMONIALS */
+.tst{background:var(--c60)}
+.tst-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tst-card{background:var(--white);border-radius:var(--rl);padding:28px;border:1px solid var(--cream2)}
+.tst-stars{display:flex;gap:2px;margin-bottom:12px}
+.tst-stars svg{width:14px;height:14px;fill:var(--c10)}
+.tst-card blockquote{font-size:var(--fs-sm);color:var(--gray500);line-height:1.75;margin-bottom:16px;font-style:italic}
+.tst-who{display:flex;align-items:center;gap:10px}
+.tst-av{width:40px;height:40px;border-radius:50%;background:var(--c10g);display:flex;align-items:center;justify-content:center;font-family:var(--ff-d);font-weight:700;font-size:var(--fs-sm);color:var(--c10)}
+.tst-nm{font-weight:600;font-size:var(--fs-sm)}
+.tst-rl{font-size:var(--fs-xs);color:var(--gray400)}
+
+/* FAQ */
+.faq{background:var(--white)}
+.faq-grid{max-width:720px;margin:0 auto}
+.faq-item{margin-bottom:10px}
+.faq-item details{background:var(--c60);border-radius:var(--r);border:1px solid var(--cream3);transition:border-color .3s}
+.faq-item details[open]{border-color:var(--c10)}
+.faq-item summary{padding:18px 20px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;font-size:var(--fs-body)}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.2rem;color:var(--c10);font-weight:400}
+.faq-item details[open] summary::after{content:'\2212'}
+.faq-ans{padding:0 20px 18px;font-size:var(--fs-sm);color:var(--gray400);line-height:1.8}
+
+/* CTA */
+.cta{background:var(--c30);padding:80px 0;text-align:center;color:var(--white)}
+.cta h2{font-size:var(--fs-h2);margin-bottom:12px}
+.cta p{color:rgba(255,255,255,.6);margin-bottom:28px;max-width:460px;margin-left:auto;margin-right:auto}
+.btn-w{display:inline-flex;align-items:center;gap:8px;background:var(--c10);color:var(--white);padding:15px 32px;border-radius:50px;font-weight:700;font-size:var(--fs-body);cursor:pointer;transition:background .3s}
+.btn-w:hover{background:var(--c10h)}
+
+/* FOOTER */
+.footer{background:var(--c30);border-top:1px solid rgba(255,255,255,.08);padding:48px 0 24px;color:rgba(255,255,255,.5)}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:32px}
+.ft-brand .logo{margin-bottom:12px;color:var(--white)}
+.ft-brand p{font-size:var(--fs-sm);line-height:1.7}
+.footer h4{color:var(--white);font-family:var(--ff-d);font-size:var(--fs-sm);font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px}
+.footer a{font-size:var(--fs-sm);display:block;padding:3px 0;transition:color .3s}
+.footer a:hover{color:var(--c10)}
+.ft-bot{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.ft-bot p{font-size:var(--fs-xs)}
+.ft-soc{display:flex;gap:14px}
+.ft-soc a svg{width:18px;height:18px}
+
+/* DRAWER */
+.dr-ov{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:200;opacity:0;pointer-events:none;transition:opacity .3s}
+.dr-ov.open{opacity:1;pointer-events:auto}
+.dr{position:fixed;top:0;right:0;width:400px;max-width:100%;height:100%;background:var(--white);z-index:201;transform:translateX(100%);transition:transform .4s var(--ease);overflow-y:auto;padding:28px 24px}
+.dr.open{transform:none}
+.dr-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+.dr-head h2{font-family:var(--ff-d);font-size:1.3rem}
+.dr-cls{width:34px;height:34px;border-radius:50%;background:var(--cream2);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.dr-cls svg{width:16px;height:16px}
+.dr label{display:block;font-size:var(--fs-sm);font-weight:600;color:var(--gray500);margin-bottom:5px;margin-top:16px}
+.dr input,.dr select,.dr textarea{width:100%;padding:11px 14px;border-radius:var(--r);border:1px solid var(--cream3);background:var(--c60);font-size:var(--fs-sm);transition:border-color .3s}
+.dr input:focus,.dr select:focus,.dr textarea:focus{border-color:var(--c10)}
+.dr textarea{resize:vertical;min-height:70px}
+.dr .btn-p{width:100%;justify-content:center;margin-top:20px}
+
+/* WA */
+.wa{position:fixed;bottom:22px;right:22px;z-index:90;width:54px;height:54px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(37,211,102,.35);transition:transform .3s;cursor:pointer}
+.wa:hover{transform:scale(1.1)}
+.wa svg{width:26px;height:26px;fill:#fff}
+
+@media(max-width:1024px){
+.hero{grid-template-columns:1fr;min-height:auto}
+.hero-img{height:60vh;order:-1}
+.hero-txt{padding:40px 20px}
+.svc-grid{grid-template-columns:repeat(2,1fr)}
+.pkg-grid{grid-template-columns:repeat(2,1fr)}
+.about-grid{grid-template-columns:1fr}
+.ft-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+.nav-lk{display:none}
+.ham{display:flex}
+.svc-grid,.pkg-grid,.tst-grid{grid-template-columns:1fr}
+.gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+.gal-grid .wide{grid-column:span 1}
+.gal-grid .tall{grid-row:span 1}
+.gal-item:hover{transform:none}
+.hero-badge{flex-wrap:wrap;gap:16px}
+.ft-grid{grid-template-columns:1fr}
+.dr{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+.rv,.marq-track{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+<div class="nav-in">
+<a href="#" class="logo">LEN<em>SCAPE</em></a>
+<div class="nav-lk">
+<a href="#services">Services</a>
+<a href="#gallery">Portfolio</a>
+<a href="#packages">Packages</a>
+<a href="#faq">FAQ</a>
+<a href="#" class="nav-cta bk-t">Book a Call</a>
+</div>
+<div class="ham" id="ham" role="button" tabindex="0" aria-label="Menu"><span></span><span></span><span></span></div>
+</div>
+</nav>
+<div class="mob-menu" id="mobM">
+<a href="#services">Services</a><a href="#gallery">Portfolio</a><a href="#packages">Packages</a><a href="#faq">FAQ</a><a href="#" class="bk-t">Book a Call</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-txt">
+<div class="hero-tag">Chandigarh Studio</div>
+<h1>Your story, told in <span>light</span>.</h1>
+<p class="hero-sub">Cinematic wedding films, commercial photography and brand shoots. We don't just take pictures. We make you feel something when you look at them years later.</p>
+<div class="hero-btns">
+<button type="button" class="btn-p bk-t"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Book a Call</button>
+<a href="#gallery" class="btn-o"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>View Portfolio</a>
+</div>
+</div>
+<div class="hero-img">
+<img src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1200" width="1200" height="800" alt="Indian wedding couple in traditional attire" fetchpriority="high">
+<div class="hero-badge">
+<div><div class="num">500+</div><div class="lbl">Weddings</div></div>
+<div><div class="num">8</div><div class="lbl">Years</div></div>
+<div><div class="num">4.9</div><div class="lbl">Rating</div></div>
+</div>
+</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marq">
+<div class="marq-track" aria-hidden="true">
+<span>Wedding Films</span><span>Pre-Wedding Shoots</span><span>Product Photography</span><span>Corporate Headshots</span><span>Brand Campaigns</span><span>E-Commerce</span><span>Food Photography</span><span>Fashion Lookbooks</span>
+<span>Wedding Films</span><span>Pre-Wedding Shoots</span><span>Product Photography</span><span>Corporate Headshots</span><span>Brand Campaigns</span><span>E-Commerce</span><span>Food Photography</span><span>Fashion Lookbooks</span>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section class="sec about">
+<div class="ctn">
+<div class="about-grid">
+<div class="about-img rv"><img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=700" width="700" height="900" alt="Photographer at work during wedding" loading="lazy"></div>
+<div>
+<p class="ey rv">About Us</p>
+<h2 class="stitle rv">We're a team of <span style="color:var(--c10)">visual storytellers</span></h2>
+<p class="sdesc rv">Started in 2018 from a one-room edit suite in Sector 17, LENSCAPE is now a 12-member crew with two studios, a full post-production pipeline and a gear inventory that makes other studios jealous. We shoot weddings with the same discipline we bring to commercial work, and brands with the same emotion we give to love stories.</p>
+<div class="about-stats rv">
+<div class="about-stat"><div class="num">500+</div><div class="lbl">Weddings Shot</div></div>
+<div class="about-stat"><div class="num">120+</div><div class="lbl">Brand Clients</div></div>
+<div class="about-stat"><div class="num">12</div><div class="lbl">Crew Members</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec svc" id="services">
+<div class="ctn">
+<p class="ey rv" style="text-align:center">Services</p>
+<h2 class="stitle rv" style="text-align:center;margin-bottom:40px">What We <span style="color:var(--c10)">Shoot</span></h2>
+<div class="svc-grid">
+<div class="svc-card rv">
+<img src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="800" alt="Indian wedding ceremony" loading="lazy">
+<div class="svc-info"><h3>Wedding Photography</h3><p>Full-day coverage, candid + traditional, same-day edits, 300+ delivered images</p></div>
+</div>
+<div class="svc-card rv">
+<img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="800" alt="Cinematic wedding film setup" loading="lazy">
+<div class="svc-info"><h3>Wedding Films</h3><p>Cinematic highlight reels, full ceremony edits, drone aerials, same-day teasers</p></div>
+</div>
+<div class="svc-card rv">
+<img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="800" alt="Pre-wedding outdoor shoot" loading="lazy">
+<div class="svc-info"><h3>Pre-Wedding Shoots</h3><p>Location shoots across North India, wardrobe guidance, mood boards, 2-3 outfit changes</p></div>
+</div>
+<div class="svc-card rv">
+<img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="800" alt="Product photography studio setup" loading="lazy">
+<div class="svc-info"><h3>Product Photography</h3><p>E-commerce white-bg, lifestyle flat-lays, 360-degree spins, Amazon-ready</p></div>
+</div>
+<div class="svc-card rv">
+<img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="800" alt="Corporate team headshots" loading="lazy">
+<div class="svc-info"><h3>Corporate Headshots</h3><p>LinkedIn-ready portraits, team pages, office environment shots, executive branding</p></div>
+</div>
+<div class="svc-card rv">
+<img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=600" width="600" height="800" alt="Food photography with styled plating" loading="lazy">
+<div class="svc-info"><h3>Food & Lifestyle</h3><p>Restaurant menus, Zomato/Swiggy listings, recipe videos, chef portraits</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="sec gallery" id="gallery">
+<div class="ctn">
+<p class="ey rv" style="text-align:center">Portfolio</p>
+<h2 class="stitle rv" style="text-align:center;margin-bottom:12px;color:var(--white)">Pictures as Clear as <span style="color:var(--c10)">Water</span></h2>
+<p class="rv" style="text-align:center;color:rgba(255,255,255,.5);margin-bottom:40px;font-size:var(--fs-sm)">Hover to see the detail we capture in every frame.</p>
+<div class="gal-grid">
+<div class="gal-item wide rv"><img src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1200" width="1200" height="500" alt="Wedding couple" loading="lazy"></div>
+<div class="gal-item tall rv"><img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&w=800" width="800" height="700" alt="Product shoot" loading="lazy"></div>
+<div class="gal-item rv"><img src="https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg?auto=compress&cs=tinysrgb&w=800" width="800" height="400" alt="Behind the scenes" loading="lazy"></div>
+<div class="gal-item rv"><img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800" width="800" height="400" alt="Food photography" loading="lazy"></div>
+<div class="gal-item rv"><img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800" width="800" height="400" alt="Team headshots" loading="lazy"></div>
+<div class="gal-item wide rv"><img src="https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1200" width="1200" height="500" alt="Wedding ceremony" loading="lazy"></div>
+</div>
+</div>
+</section>
+
+<!-- PACKAGES -->
+<section class="sec pkg" id="packages">
+<div class="ctn">
+<p class="ey rv" style="text-align:center">Wedding Packages</p>
+<h2 class="stitle rv" style="text-align:center;margin-bottom:40px">Choose Your <span style="color:var(--c10)">Coverage</span></h2>
+<div class="pkg-grid">
+
+<div class="pkg-card rv">
+<div class="pkg-label">Essential</div>
+<h3>Half Day</h3>
+<div class="pkg-price">Rs 45,000<small> / event</small></div>
+<ul class="pkg-list">
+<li>1 Photographer + 1 Assistant</li>
+<li>Up to 6 hours coverage</li>
+<li>200+ edited photos</li>
+<li>Online gallery delivery</li>
+<li>All photos in full resolution</li>
+<li>Ready in 15 working days</li>
+</ul>
+<button type="button" class="btn-p bk-t" style="width:100%;justify-content:center">Get Quote</button>
+</div>
+
+<div class="pkg-card feat rv">
+<div class="pkg-label">Most Popular</div>
+<h3>Full Wedding</h3>
+<div class="pkg-price">Rs 1,25,000<small> / event</small></div>
+<ul class="pkg-list">
+<li>2 Photographers + 1 Videographer</li>
+<li>Full day coverage (12+ hrs)</li>
+<li>400+ edited photos</li>
+<li>5-min cinematic highlight film</li>
+<li>Drone aerial shots</li>
+<li>Same-day Instagram teaser</li>
+<li>Ready in 20 working days</li>
+</ul>
+<button type="button" class="btn-p bk-t" style="width:100%;justify-content:center">Get Quote</button>
+</div>
+
+<div class="pkg-card rv">
+<div class="pkg-label">Premium</div>
+<h3>Multi-Day</h3>
+<div class="pkg-price">Rs 2,50,000<small> / event</small></div>
+<ul class="pkg-list">
+<li>3 Photographers + 2 Videographers</li>
+<li>All ceremonies (Mehendi to Reception)</li>
+<li>600+ edited photos</li>
+<li>15-min cinematic wedding film</li>
+<li>Full ceremony edits (uncut)</li>
+<li>Pre-wedding shoot included</li>
+<li>Premium photo album (40 pages)</li>
+<li>Ready in 30 working days</li>
+</ul>
+<button type="button" class="btn-p bk-t" style="width:100%;justify-content:center">Get Quote</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec tst">
+<div class="ctn">
+<p class="ey rv" style="text-align:center">Testimonials</p>
+<h2 class="stitle rv" style="text-align:center;margin-bottom:40px">What Couples <span style="color:var(--c10)">Say</span></h2>
+<div class="tst-grid">
+<div class="tst-card rv">
+<div class="tst-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+<blockquote>"We were nervous about how the photos would turn out in low-light during our evening ceremony. LENSCAPE handled it beautifully. Every candid moment, every detail shot. We cried watching the highlight reel."</blockquote>
+<div class="tst-who"><div class="tst-av">PS</div><div><div class="tst-nm">Priya & Sahil</div><div class="tst-rl">Wedding, Chandigarh</div></div></div>
+</div>
+<div class="tst-card rv">
+<div class="tst-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+<blockquote>"We hired LENSCAPE for our D2C skincare brand shoot. They understood our aesthetic from the mood board alone. Product shots were Amazon-ready, lifestyle shots went straight to our Instagram. Zero reshoots."</blockquote>
+<div class="tst-who"><div class="tst-av">NK</div><div><div class="tst-nm">Neha K.</div><div class="tst-rl">Founder, GlowSkin Co.</div></div></div>
+</div>
+<div class="tst-card rv">
+<div class="tst-stars"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+<blockquote>"Three-day Sikh wedding with 1,200 guests. LENSCAPE sent a 5-person crew and covered everything from the Mehendi to the Reception. Delivered 800 photos in three weeks, every single one was usable."</blockquote>
+<div class="tst-who"><div class="tst-av">AG</div><div><div class="tst-nm">Arjun & Gurpreet</div><div class="tst-rl">Wedding, Amritsar</div></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq" id="faq">
+<div class="ctn">
+<p class="ey rv" style="text-align:center">FAQ</p>
+<h2 class="stitle rv" style="text-align:center;margin-bottom:36px">Common <span style="color:var(--c10)">Questions</span></h2>
+<div class="faq-grid">
+<div class="faq-item rv"><details><summary>How many photos will we receive?</summary><div class="faq-ans">It depends on the package. A half-day shoot delivers 200+ edited photos, a full wedding 400+, and a multi-day package 600+. Every photo is colour-graded and retouched. We deliver full-resolution files via a private online gallery you can share with family.</div></details></div>
+<div class="faq-item rv"><details><summary>Do you travel for destination weddings?</summary><div class="faq-ans">Yes. We've shot weddings across Rajasthan, Goa, Himachal and Kerala. Travel and stay costs are additional but we keep them transparent. We share a detailed travel estimate before you confirm.</div></details></div>
+<div class="faq-item rv"><details><summary>How long before we get the photos and video?</summary><div class="faq-ans">Edited photos are delivered in 15-30 working days depending on the package. The cinematic highlight film takes 20-30 days. Same-day teasers (1-min Instagram reels) are delivered within 24 hours of the event.</div></details></div>
+<div class="faq-item rv"><details><summary>What equipment do you use?</summary><div class="faq-ans">We shoot on Sony A7 IV and A7S III bodies with GM-series lenses. Video is captured in 4K on gimbals. We carry Godox lighting, a DJI Mavic 3 for aerials, and always bring backup bodies and cards to every shoot.</div></details></div>
+<div class="faq-item rv"><details><summary>Can we get both traditional and candid coverage?</summary><div class="faq-ans">Absolutely. Our crew works in pairs. One photographer handles the posed family portraits and group shots. The other moves through the event capturing candid moments, emotions and details. You get both styles in one package.</div></details></div>
+<div class="faq-item rv"><details><summary>What's the booking process and payment terms?</summary><div class="faq-ans">We start with a 15-minute call to understand your event. After that we share a detailed quote. A 30% advance confirms your date. 50% is due a week before the event, and the remaining 20% on delivery. We share a simple contract that covers deliverables, timelines and cancellation terms.</div></details></div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="ctn">
+<h2>Let's make something you'll want to frame.</h2>
+<p>Tell us about your event. We'll come back with a plan, a quote and a mood board.</p>
+<button type="button" class="btn-w bk-t"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>Book a Call</button>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="ctn">
+<div class="ft-grid">
+<div class="ft-brand">
+<div class="logo">LEN<em>SCAPE</em></div>
+<p>Cinematic wedding films and commercial photography. Based in Chandigarh, shooting across India. Stories told through light since 2018.</p>
+</div>
+<div>
+<h4>Services</h4>
+<a href="#services">Weddings</a><a href="#services">Wedding Films</a><a href="#services">Pre-Wedding</a><a href="#services">Product Shoots</a><a href="#services">Corporate</a><a href="#services">Food & Lifestyle</a>
+</div>
+<div>
+<h4>Studio</h4>
+<a href="#gallery">Portfolio</a><a href="#packages">Packages</a><a href="#faq">FAQ</a>
+</div>
+<div>
+<h4>Contact</h4>
+<a href="tel:+911724567890">+91 172 456 7890</a>
+<a href="mailto:hello@lenscape.in">hello@lenscape.in</a>
+<a>SCO 42, Sector 17-C, Chandigarh 160017</a>
+<a>Mon-Sat: 10 AM - 7 PM</a>
+</div>
+</div>
+<div class="ft-bot">
+<p>2026 LENSCAPE. All rights reserved.</p>
+<div class="ft-soc">
+<a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg></a>
+<a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg></a>
+<a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- DRAWER -->
+<div class="dr-ov" id="drOv"></div>
+<div class="dr" id="dr" role="dialog" aria-label="Book a call">
+<div class="dr-head">
+<h2>Book a Call</h2>
+<button type="button" class="dr-cls" id="drCls" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+</div>
+<form id="bkForm" novalidate>
+<label for="f-name">Your Name</label>
+<input type="text" id="f-name" required placeholder="Full name">
+<label for="f-phone">Phone</label>
+<input type="tel" id="f-phone" required placeholder="+91 98765 43210">
+<label for="f-type">Shoot Type</label>
+<select id="f-type" required>
+<option value="">Select type</option>
+<option>Wedding Photography</option>
+<option>Wedding Film</option>
+<option>Pre-Wedding Shoot</option>
+<option>Product Photography</option>
+<option>Corporate Headshots</option>
+<option>Food & Lifestyle</option>
+<option>Brand Campaign</option>
+<option>Other</option>
+</select>
+<label for="f-date">Event / Shoot Date</label>
+<input type="date" id="f-date">
+<label for="f-city">City</label>
+<input type="text" id="f-city" placeholder="Chandigarh, Delhi, Jaipur...">
+<label for="f-notes">Brief</label>
+<textarea id="f-notes" placeholder="Tell us about the event, venue, style you like..."></textarea>
+<button type="submit" class="btn-p">Send Enquiry</button>
+</form>
+</div>
+
+<a href="https://wa.me/911724567890?text=Hi%20LENSCAPE%2C%20I%27d%20like%20to%20enquire%20about%20a%20shoot." class="wa" aria-label="WhatsApp" target="_blank" rel="noopener">
+<svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+(function(){
+var n=document.getElementById('nav');
+window.addEventListener('scroll',function(){n.classList.toggle('scrolled',window.scrollY>50)},{passive:true});
+var h=document.getElementById('ham'),m=document.getElementById('mobM');
+h.addEventListener('click',function(){h.classList.toggle('active');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';});
+m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){h.classList.remove('active');m.classList.remove('open');document.body.style.overflow='';});});
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+}else{document.querySelectorAll('.rv').forEach(function(el){el.classList.add('v');});}
+clearTimeout(window._fb);
+var ov=document.getElementById('drOv'),dr=document.getElementById('dr'),cl=document.getElementById('drCls');
+function oD(){ov.classList.add('open');dr.classList.add('open');document.body.style.overflow='hidden';}
+function cD(){ov.classList.remove('open');dr.classList.remove('open');document.body.style.overflow='';}
+document.querySelectorAll('.bk-t').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();oD();});});
+cl.addEventListener('click',cD);ov.addEventListener('click',cD);
+document.getElementById('bkForm').addEventListener('submit',function(e){
+e.preventDefault();
+var nm=document.getElementById('f-name').value,ph=document.getElementById('f-phone').value,tp=document.getElementById('f-type').value;
+if(!nm||!ph||!tp){alert('Please fill required fields.');return;}
+var msg='Hi LENSCAPE, I\'d like to book:\n\nName: '+nm+'\nPhone: '+ph+'\nType: '+tp;
+var dt=document.getElementById('f-date').value;if(dt)msg+='\nDate: '+dt;
+var ci=document.getElementById('f-city').value;if(ci)msg+='\nCity: '+ci;
+var nt=document.getElementById('f-notes').value;if(nt)msg+='\nBrief: '+nt;
+window.open('https://wa.me/911724567890?text='+encodeURIComponent(msg),'_blank');cD();
+});
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var t=document.querySelector(this.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}});});
+})();
+</script>
+</body>
+</html>
