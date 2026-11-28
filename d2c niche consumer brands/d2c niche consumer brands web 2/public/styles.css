@@ -155,8 +155,14 @@ address{font-style:normal}
 /* BREW GUIDE */
 .brew{background:var(--cream)}
 .brew-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.brew-card{background:var(--white);border-radius:var(--radius-lg);padding:32px 24px;text-align:center;border:1px solid var(--gray200);transition:border-color .3s,box-shadow .3s,transform .3s}
+.brew-card{background:var(--white);border-radius:var(--radius-lg);padding:0;text-align:center;border:1px solid var(--gray200);transition:border-color .3s,box-shadow .3s,transform .3s;overflow:hidden}
 .brew-card:hover{border-color:var(--c10);box-shadow:var(--shadow-md);transform:translateY(-4px)}
+.brew-img{width:100%;height:180px;overflow:hidden}
+.brew-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.brew-card:hover .brew-img img{transform:scale(1.06)}
+.brew-card h3,.brew-card p,.brew-card dl{padding-left:24px;padding-right:24px}
+.brew-card dl{padding-bottom:24px}
+.brew-card h3{padding-top:20px}
 .brew-card svg{width:48px;height:48px;color:var(--c10t);margin:0 auto 16px}
 .brew-card h3{font-size:1.1rem;margin-bottom:6px}
 .brew-card p{font-size:.88rem;color:var(--gray600)}
