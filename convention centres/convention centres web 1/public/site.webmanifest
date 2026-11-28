@@ -1,0 +1,12 @@
+{
+  "name": "GRANDVIEW Convention Centre",
+  "short_name": "GRANDVIEW",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F5EFE6",
+  "theme_color": "#1B2A4A",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
